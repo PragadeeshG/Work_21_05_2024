@@ -1,0 +1,16 @@
+create table if not exists cloud_formation(
+resource_id Integer not null,
+parameters Integer null,
+template_id varchar(255) null,
+template_name varchar(255) null,
+mappings varchar(255) null,
+template_input varchar(255) null,
+template_output_available char null,
+template_output varchar(255) null,
+intrinsic_function varchar(255) null,
+rollback varchar(255) null,
+service_role varchar(255) null,
+capability_indicator varchar(255) null,
+deletion_policy varchar(255) null,
+stack_policy varchar(255) null,
+constraint cloud_formation_pk primary key(resource_id));

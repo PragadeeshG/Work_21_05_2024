@@ -1,0 +1,15 @@
+create table if not exists standard_queues(
+queue_id Integer not null,
+stream_policy varchar(255) null,
+queue_access_deny char null,
+queue_name Integer null,
+stream_type varchar(255) null,
+stream_status varchar(255) null,
+owner Integer null,
+ded_letter_queue Integer null,
+delay_queue varchar(255) null,
+first_in_first_out_queue Integer null,
+last_in_first_out_queue varchar(255) null,
+status varchar(255) null,
+remarks varchar(255) null,
+constraint standard_queues_pk primary key(queue_id));
